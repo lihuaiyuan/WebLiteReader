@@ -1,9 +1,68 @@
-<div class="container">
- <h2>my books</h2>
- <p class="form-group" ng-repeat="book in books">
-	 <a type="text" class="form-control">{{book}}</a>
- </p>
-	 
- 
-</div>
+<div ng-controller="MainCtrl">
+    <div ng-repeat="name in books.names">
+    <div class="content-section-a">
 
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-sm-6">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">{{book}}The Art of Computer Programming,<br>Volume 1: Fundamental Algorithms"</h2>
+                    <p class="lead">By Donald Knuth(3rd Edition, 1997) . For anyone with a mathematical predilection, Volumes 1 and 3 ("Sorting and Searching") stand out as true bibles of the industry.</p>
+                </div>
+                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                    <img class="img-responsive" src="images/TheArtofComputerProgramming.jpg" alt="">
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.content-section-a -->
+
+    <div class="content-section-b">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">Structure and Interpretation <br>of Computer Programs</h2>
+                    <p class="lead">By Harold Abelson, Gerald Sussman, and Julie Sussman(2nd Edition, 1996). Concentrates on breaking big problems down into little ones, and ensuring the pieces come back to build the whole. The book is available under the Creative Commons Noncommercial License, <a target="_blank" href="http://mitpress.mit.edu/sicp/full-text/book/book.html">for free on the Web.</a></p>
+                </div>
+                <div class="col-lg-5 col-sm-pull-6  col-sm-6">
+                    <img class="img-responsive" src="images/wizard.jpg" alt="">
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.content-section-b -->
+
+    <div class="content-section-a">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-5 col-sm-6">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">Refactoring: <br>Improving the Design of Existing Code</h2>
+                    <p class="lead">By Martin Fowler, Kent Beck, John Brant, and William Opdyke (1999). Shows you how to rebend a programming pretzel, taking poorly designed code and turning it into something even humans can understand.</p>
+                </div>
+                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                    <img class="img-responsive" src="images/refactor.jpg" alt="">
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    </div>
+    <!-- /.content-section-a -->
+</div>
